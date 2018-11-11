@@ -62,7 +62,7 @@ body {
     transform-style: preserve-3d;
     transition: all 1s ease;
     z-index: 10;
-}
+-webkit-transition: -webkit-transform 1s;}
 
 .front {
     position: absolute;
