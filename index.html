@@ -1,0 +1,63 @@
+<!--example: https://polbene95.github.io/UBIQUMLibrary/-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link href="reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="header">
+                </div>
+            </div>
+        </header>
+
+        <nav >
+                <div id="title"> My Bookstore</div>
+                <input id="input" type="text" placeholder="Search">
+        </nav>
+
+        <div class="maincontainer">
+            <div class="card" v-for="book in books">
+                <div class="front">
+                    <img v-bind:src="book.portada" v-bind:alt="book.titulo" />
+                </div>
+                <div class="back">
+                    <h1 class="search">{{book.titulo}}</h1>
+                    <p class="search">{{book.descripcion}}</p>
+                    <button :data-fancybox="'gallery'" :href="book.detalle" class="btn btn-info">Más info</button>
+
+                </div>
+            </div>
+        </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--    FancyBox-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="//unpkg.com/vue"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+
+</body>
+
+</html>
