@@ -60,7 +60,7 @@ body {
     margin: 20px;
     height: 400px;
     transform-style: preserve-3d;
-    transition: all 1s ease;
+/*    transition: all 1s ease;*/
     z-index: 10;
     -webkit-transition: -webkit-transform 1s;
 }
@@ -69,7 +69,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+/*    backface-visibility: hidden;*/
     -webkit-backface-visibility: hidden;
 }
 
@@ -82,7 +82,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+/*    backface-visibility: hidden;*/
     color: black;
     background: lightgrey;
     transform: rotateY(180deg);
