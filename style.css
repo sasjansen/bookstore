@@ -72,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    -webkit-backface-visibility: hidden;
+/*    -webkit-backface-visibility: hidden;*/
     backface-visibility: hidden;
 }
 
@@ -83,7 +83,7 @@ body {
     height: 400px;
     transform-style: preserve-3d;
     z-index: 10;
-    -webkit-transition: -webkit-transform 1s;
+/*    -webkit-transition: -webkit-transform 1s;*/
     transition: all 1s ease;
 }
 
